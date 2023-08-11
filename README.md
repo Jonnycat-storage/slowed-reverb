@@ -1,17 +1,14 @@
-# slowed+reverb
+# slowed&reverb
 Takes an audio file and a gif, outputs a slowed+reverb video (e.g http://tiny.cc/iprlez)
+### NOTE!!! IT ONLY TAKES MP3!!!!!
 
-## Linux
+### Setup 
+install python 3 
+install sox by homebrew or macports
 
-When I wrote this script I was using Linux
-
-### Setup
-
+## Linux & Mac
 ```
-// you should already have Python 3 and pip
-
-$ sudo apt install sox libsox-fmt-all
-
+$ brew install sox
 $ pip install -r requirements.txt
 ```
 
@@ -24,14 +21,10 @@ e.g.
 $ python slowed-reverb.py -a song.mp3 -g video.gif -o output.mp4
 ```
 
-## Docker (for non-Linux users)
-
-This script is designed to run on Linux, so if you're on another OS like Windows I made a docker version.
-
-### Setup
+### Docker Setup
 
 ```
-// install docker
+// install [docker](https://www.docker.com/)
 
 // build the docker image
 $ docker build -t slowed-reverb:latest .
