@@ -71,7 +71,7 @@ def main():
     # chain of effects to apply to the audio
     fx = (
         AudioEffectsChain()
-        .speed(0.9)
+        .speed()
         .reverb()
     )
 
