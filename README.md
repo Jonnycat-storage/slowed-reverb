@@ -5,11 +5,17 @@ Takes an audio file and a gif, outputs a slowed+reverb video (e.g http://tiny.cc
 ### Setup 
 install python 3 
 install sox by homebrew or macports
+install chocolatey (windows only) https://chocolatey.org/
 
 ## Linux & Mac
 ```
 $ brew install sox
 $ pip install -r requirements.txt
+```
+
+## Windows 
+```
+$ choco install sox.portable
 ```
 
 ### Usage
@@ -33,6 +39,9 @@ $ docker build -t slowed-reverb:latest .
 $ mv /path/to/mp3 shared
 $ mv /path/to/gif shared
 ```
+# Problem fixes  
+install chocolatey on powershell administration 
+if you can't install sox run this command  choco install chocolatey-compatibility.extension this will fix the old ports like sox 
 
 ### Usage
 
