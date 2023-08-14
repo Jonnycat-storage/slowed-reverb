@@ -24,7 +24,7 @@ $ python slowed-reverb.py -a song.mp3 -g video.gif -o output.mp4
 ### Docker Setup
 
 ```
-// install [docker](https://www.docker.com/)
+// install [docker] (https://www.docker.com/)
 
 // build the docker image
 $ docker build -t slowed-reverb:latest .
